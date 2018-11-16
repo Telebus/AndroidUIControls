@@ -29,8 +29,7 @@ public class OptionsMenuClass extends AppCompatActivity {
         Toast.makeText(this, "Selected Item: " + item.getTitle(), Toast.LENGTH_SHORT).show();
         switch (item.getItemId()) {
             case R.id.home:
-                Intent intent = new Intent(this, MainActivity.class);
-                startActivity(intent);
+                startActivity(new  Intent(this, MainActivity.class));
             case R.id.search_item:
                 // do your code
                 return true;
